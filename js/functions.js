@@ -8,3 +8,19 @@ const lengthOfString = function (string, maxLength) {
 }
 
 lengthOfString('Тестовая строка', 14);
+
+
+//Функция для проверки, является ли строка палиндромом.
+
+const isPalindrom = function (string) {
+  let normalString = (string.replaceAll(' ', '')).toLowerCase();
+  let testString = '';
+
+  for (i = normalString.length - 1; i >= 0; i--) {
+    testString += normalString[i];
+  }
+
+  return testString === normalString;
+}
+
+isPalindrom('доВод');
