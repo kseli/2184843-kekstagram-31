@@ -3,16 +3,14 @@
 и возвращает true, если строка меньше или равна указанной длине,
 и false, если строка длиннее.*/
 
-const lengthOfString = function (string, maxLength) {
-  return string.length <= maxLength;
-};
+const lengthOfString = (string, maxLength) => string.length <= maxLength;
 
 lengthOfString('Тестовая строка', 14);
 
 
 //Функция для проверки, является ли строка палиндромом.
 
-const isPalindrom = function (string) {
+const isPalindrom = (string) => {
   const normalString = (string.replaceAll(' ', '')).toLowerCase();
   let testString = '';
 
